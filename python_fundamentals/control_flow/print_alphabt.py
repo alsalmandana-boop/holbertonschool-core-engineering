@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-alphabet = ""
-
-for letter in "abcdefghijklmnopqrstuvwxyz":
-    if letter != "e" and letter != "q":
-        alphabet += letter
-
-print(alphabet)
+for i in range(97, 123):
+    if i != 101 and i != 113:
+        print("{:c}".format(i), end="")
