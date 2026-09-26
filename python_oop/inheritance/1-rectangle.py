@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+"""Defines a Rectangle class."""
+
+BaseGeometry = __import__('base_geometry').BaseGeometry
+
+
+class Rectangle(BaseGeometry):
+    """Represents a rectangle."""
+
+    def __init__(self, width, height):
+        """Initialize a rectangle."""
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+
+        self.__width = width
+        self.__height = height
+
+    def area(self):
+        """Return the rectangle area."""
+        return self.__width * self.__height
