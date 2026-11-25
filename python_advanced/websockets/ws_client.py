@@ -9,7 +9,7 @@ async def connect_and_send(uri: str, text: str) -> str:
     """Send one message and return the server response."""
     async with websockets.connect(uri) as websocket:
         await websocket.send(text)
-        response  await websocket.recv()
+        response = await websocket.recv()
      
 
 
