@@ -9,14 +9,14 @@ async def connect_and_send(uri: str, text: str) -> str:
     """Send one message and return the server response."""
     async with websockets.connect(uri) as websocket:
         await websocket.send(text)
-        response = await websocket.recv()
-        return response
+        response  await websocket.recv()
+     
 
 
 async def main():
     """Connect to the echo server and print its response."""
     response = await connect_and_send(
-        "ws://127.0.0.1:8765", "demo"
+        "ws://localhost:8765", "Hello WebSocket"
     )
     print(response, end="")
 
