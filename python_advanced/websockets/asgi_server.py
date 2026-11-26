@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """ASGI application with HTTP and WebSocket support."""
 
