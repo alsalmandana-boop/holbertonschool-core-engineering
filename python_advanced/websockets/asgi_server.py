@@ -29,4 +29,3 @@ app = Starlette(routes=[
     Route("/", homepage),
     WebSocketRoute("/ws", websocket_endpoint),
 ])
-
